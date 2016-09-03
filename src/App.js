@@ -15,13 +15,13 @@ class App extends Component {
         <div>
           <h1>Class List</h1>
             <ul role="nav">
-              <li><Link to="/kevin">Kevin</Link></li>
-              <li><Link to="/linsy">Linsy</Link></li>
-              <li><Link to="/lake">Lake</Link></li>
-              <li><Link to="/ed">Ed</Link></li>
-              <li><Link to="/brandon">Brandon</Link></li>
-              <li><Link to="/joe">Joe</Link></li>
-              <li><Link to="/bama">Bama</Link></li>
+              <li><Link to="/kchambers24">Kevin</Link></li>
+              <li><Link to="/linsydeanna">Linsy</Link></li>
+              <li><Link to="/lakeblack">Lake</Link></li>
+              <li><Link to="/eddanieles">Ed</Link></li>
+              <li><Link to="/brandonkhilton">Brandon</Link></li>
+              <li><Link to="/josephrstraub">Joe</Link></li>
+              <li><Link to="/bheptin">Bama</Link></li>
             </ul>
           {/* add this */}
           {this.props.children}

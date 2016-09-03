@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import $ from 'jquery'
 
-class Bama extends Component{
+class student extends Component{
 constructor(props){
   super(props);
   this.state = {
@@ -12,7 +12,8 @@ constructor(props){
   }
 }
 componentDidMount() {
-  this.serverRequest = $.get("https://api.github.com/users/bheptin", function (result) {
+  this.serverRequest = $.get(`https://api.github.com/users/${this.props.params.username}`, function (result) {
+    console.log(result);
     this.setState({
       url: result.html_url,
       avatar: result.avatar_url,
@@ -24,6 +25,7 @@ componentWillUnmount() {
   this.serverRequest.abort();
 }
 render() {
+  console.log(this.props.params.username);
   return (
     <div>
       <p>GitHub Account: <a href={`${this.state.url}`}>{this.state.url}</a></p>
@@ -34,4 +36,4 @@ render() {
   }
 }
 
-export default Bama
+export default student
